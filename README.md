@@ -102,3 +102,16 @@ Once you hand this over, their "job" looks like this:
 2. **Add Content:** Click "Products" > "Add New."
 3. **Publish:** Type the text, drag in a photo, and hit "Publish."
 4. **View Results:** Open the Google Analytics app on their phone to see the visitor spikes.
+
+## Next Steps
+
+- Finish the excercise of running the project in the cloud
+- Design website based on current design from client. Make a design based on Stich.
+- ...
+- (Based on the feedback about the design think about what solution will be better for then...)
+- (1. Design project from 0 with CMS)
+- (2. Design project as react only and then integrate CMS)
+- ...
+- Adapt the project to be able to run the components in locally
+  - Documentation
+  - Rely on docker-compose
