@@ -43,13 +43,23 @@ Vercel doesn't store your database, so you need a free cloud provider to hold yo
 3. Seed database (add screenshot)
 4. Go to the website and click through the pages (add screenshot)
 
+## Phase 4: Deployment to Vercel
+
+1. **Push your code to GitHub.**
+2. **Log into [Vercel](https://vercel.com/)** and click "Add New Project."
+3. **Import your GitHub repository.**
+4. **Environment Variables:** This is the most important step. You must add:
+    - `MONGODB_URL`: (The connection string from Phase 2).
+    - `PAYLOAD_SECRET`: (Any random long string of text).
+5. **Click Deploy.** Vercel will give you a live URL (e.g., `my-test-site.vercel.app`).
+
 ---
 
 👨‍🔬 Under investigation ⬇️
 
 ---
 
-## Phase 4: Defining Your Content (The "Products")
+## Phase 5: Defining Your Content (The "Products")
 
 In your code editor (like VS Code), go to the `collections/` folder. Your developer will create a file called `Products.ts`:
 
@@ -66,15 +76,6 @@ export const Products = {
 
 _Once saved, your non-tech team will immediately see a "Products" menu in the admin panel where they can type and upload photos._
 
-## Phase 5: Deployment to Vercel
-
-1. **Push your code to GitHub.**
-2. **Log into [Vercel](https://vercel.com/)** and click "Add New Project."
-3. **Import your GitHub repository.**
-4. **Environment Variables:** This is the most important step. You must add:
-    - `MONGODB_URL`: (The connection string from Phase 2).
-    - `PAYLOAD_SECRET`: (Any random long string of text).
-5. **Click Deploy.** Vercel will give you a live URL (e.g., `my-test-site.vercel.app`).
 
 ## Phase 6: Analytics (The "Eyes")
 
@@ -93,15 +94,6 @@ _Once saved, your non-tech team will immediately see a "Products" menu in the ad
     import ReactGA from "react-ga4";
     ReactGA.initialize("G-XXXXXXXXXX");
     ```
-
-## Summary of Actions for the Non-Tech Team
-
-Once you hand this over, their "job" looks like this:
-
-1. **Log in:** Go to `your-site.com/admin`.
-2. **Add Content:** Click "Products" > "Add New."
-3. **Publish:** Type the text, drag in a photo, and hit "Publish."
-4. **View Results:** Open the Google Analytics app on their phone to see the visitor spikes.
 
 ## Next Steps
 
